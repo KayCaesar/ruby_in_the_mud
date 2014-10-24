@@ -1,11 +1,11 @@
-require "ruby_in_the_mud/version"
-require "ruby_in_the_mud/behavior"
-require "ruby_in_the_mud/entity"
-require "ruby_in_the_mud/rollers.rb"
+require_relative "lib/ruby_in_the_mud/version"
+require_relative "lib/ruby_in_the_mud/behavior"
+require_relative "lib/ruby_in_the_mud/entity"
+require_relative "lib/ruby_in_the_mud/rollers.rb"
 
-Dir["ruby_in_the_mud/inputs/*.rb"].each {|file|   require file }
-Dir["ruby_in_the_mud/inputs/ais/*.rb"].each {|file| require file }
-Dir["ruby_in_the_mud/droppers/*.rb"].each {|file| require file }
+Dir["lib/ruby_in_the_mud/inputs/*.rb"].each {|file| puts file;   require_relative file }
+Dir["lib/ruby_in_the_mud/inputs/ais/*.rb"].each {|file| require_relative file }
+Dir["lib/ruby_in_the_mud/droppers/*.rb"].each {|file| require_relative file }
 
 module RubyInTheMud
 

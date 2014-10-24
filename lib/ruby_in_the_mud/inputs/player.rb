@@ -1,3 +1,4 @@
+puts "player"
 class PlayerInput
   def tick
     @input = get_input
@@ -10,7 +11,6 @@ class PlayerInput
       puts "moving north"
     when /s(outh)?/
       puts "moving south"
-
     end
   end
   def get_input
