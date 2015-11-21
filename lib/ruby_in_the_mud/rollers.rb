@@ -5,13 +5,13 @@ class Roller
 end
 class StatsRoller < Roller
   def run(entity)
-    puts "rolling stats"
+    puts 'rolling stats'
     entity.hp = Random.rand(@level)
   end
 end
 class LootRoller  < Roller
   def run(entity)
-    puts "rolling loot"
+    puts 'rolling loot'
     entity.loot = [:junk, :more_junk]
   end
 end
